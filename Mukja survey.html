@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukja Survet Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Mukja Survey Form</h1>
+    <p>Please fill out this form so we can better serve you(:</p>
+    <form action="https://formsubmit.co/info@mukjaatl.com" method="POST">
+       <fieldset class="first">
+        <h2>Tell us about yourself</h2>
+        <label>Name:<input type="text" name="name" id="name" required placeholder="Your first and last name"></label>
+        <label>Email:<input type="email" name="email" id="email" required></label>
+        <label>How many times have you been to Mukja?<input type="number" name="visits" id="visits" placeholder="#" required min="1" max="1000"></label>
+        <label>Where are you visiting us from?</label>
+        <label><input type="radio" name="residence" id="residence" required class="inline">I am from Georgia</label>
+        <label><input type="radio" name="residence" id="residence" required class="inline">I am from Out-of-state</label>
+        <label>*If you selected "I am from Out-of-state please specify the state/country:<input type="text" name="non-residence" id="non-residence"></label>   
+    </fieldset>
+    <fieldset class="second">
+        <h2>Let's talk about Mukja!</h2>
+        <label>How did you discover us?<select name="info" id="info" required>
+            <option value="">Select one</option>
+        <option value="friend">From a friend</option>
+        <option value="social">From social media</option>
+        <option value="Company">From comapany catering</option>
+        <option value="coupons">From Groupon, Kroger ads etc.</option>
+        <option value="walking">From walking around the neighbourhood</option>
+        </select></label>
+    <br>
+        <label >What is your favirite meal from us? (I know it's hard but just select one!)</label>
+        <label><input type="radio" name="meal" id="the birds" class="inline">The Birds (Qurter, half and/or whole Birds)</label>
+        <label><input type="radio" name="meal" id="wings" class="inline">Wings</label>
+        <label><input type="radio" name="meal" id="chicken bowl" class="inline">The chicken bowl</label>
+        <label><input type="radio" name="meal" id="pork bowl" class="inline">The pork bowl</label>
+        <label><input type="radio" name="meal" id="bob" class="inline">The Bird On a Bun (sandwich)</label>
+    <br>
+        <label >What is your favirite side from us? (I know it's hard but just select one!)</label>
+        <label><input type="radio" name="side" id="fries" class="inline">Fries</label>
+        <label><input type="radio" name="side" id="kslaw" class="inline">Korean Slaw</label>
+        <label><input type="radio" name="side" id="standard" class="inline">The standard</label>
+        <label><input type="radio" name="side" id="mac" class="inline">Kimchi mac & cheese</label>
+        <label><input type="radio" name="side" id="corn" class="inline">Corn Cheese</label>
+    <br>
+        <label >Slect all of the items you have tried at Mukja:</label>
+        <label> <input type="checkbox" name="items" class="inline">The Birds (Qurter, half and/or whole Birds)</label>
+        <label> <input type="checkbox" name="items" class="inline">Wings</label>
+        <label> <input type="checkbox" name="items" class="inline">The chicken bowl</label>
+        <label> <input type="checkbox" name="items" class="inline">The pork bowl</label>
+        <label> <input type="checkbox" name="items" class="inline">The Bird On a Bun (sandwich)</label>
+        <label> <input type="checkbox" name="items" class="inline">Fries</label>
+        <label> <input type="checkbox" name="items" class="inline">Korean slaw</label>
+        <label> <input type="checkbox" name="items" class="inline">The standard</label>
+        <label> <input type="checkbox" name="items" class="inline">Kimchi mac & cheese</label>
+        <label> <input type="checkbox" name="items" class="inline">Corn cheese</label>
+    <br>
+        <label>What are we doing well at Mukja?</label>
+        <label><input type="checkbox" name="feedback" id="service">Customer service</label>
+        <label><input type="checkbox" name="feedback" id="quality">Food quality</label>
+        <label><input type="checkbox" name="feedback" id="delivery">Delivery quality</label>
+        <label><input type="checkbox" name="feedback" id="vibe">Ambiance (the vibes)</label>
+    <br>
+   <label >Anything else you'd like to tell our staff?<textarea name="feedback" id="feedback" cols="50" rows="10" placeholder="We are all ears! So spill your heart out here!"></textarea></label>
+    <input type="submit" value="Submit">
+    </fieldset>
+   </form>
+</body>
+</html>
